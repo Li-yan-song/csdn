@@ -1,0 +1,173 @@
+html, body {
+	font-size: 62.5%;
+}
+html, body, ul, p {
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+.title{
+	height: 5.2rem;
+	width: 100%;
+}
+.csdn ,.path ,.fang,.go{
+	float: left;
+}
+.path{
+	margin-left:1rem; 
+    margin-top: 1.5rem;
+}
+.csdn{
+	left: 30%;
+	top: 30%; 
+	position: relative;
+}
+.enter{
+	float: right;
+    top: 1.5rem;
+    margin-right:1rem;
+    position: relative;
+}
+.fang{
+	width: 2.5rem;
+    height: 2rem;
+}
+.go{
+	font-size: 1.4rem;
+    color: #C92027;
+}
+/*.pic img{
+	width: 100%;
+	
+}*/
+nav{
+	position: relative;
+    width: 100%;
+    height: 3rem;
+    background: #ebebeb;
+    overflow: hidden;
+    display: flex;
+}
+nav .nav-mask{
+    width: 100%;
+    overflow-x: auto;
+    height: 3rem;
+    padding-left: 1rem;
+}
+nav .nav-mask .warp{
+	display: flex;
+	height: 100%;
+	line-height: 2rem;
+	flex-wrap: nowrap;
+}
+nav a.warp {
+	font-size: 1.4rem;
+	padding-left: 1.5rem;
+	position: relative;
+	top: 0.6rem;
+}
+nav a.btn-nav.active {
+    color: #c92027;
+}
+nav a.btn-nav {
+    display: block;
+    margin-right: 1.2rem;
+    height: 100%;
+    white-space: nowrap;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+nav .btn-nav{
+    color: #4f4f4f;
+}
+.feedlist {
+    border-top: 1px solid #d8d8d8;
+}
+.feedlist li {
+    position: relative;
+    padding: 0.5rem 1.5rem 0.8rem;
+    border-bottom: 1px solid #d8d8d8;
+}
+.feedlist li h2 {
+    font-size: 1.7rem;
+    line-height: 1.44rem;
+    max-height: 2.88rem;
+    font-weight: bold;
+    overflow: hidden;
+}
+.feedlist li h2 a {
+    display: block;
+    color: #2f2f2f;
+    word-break: break-all;
+    outline: none;
+}
+.feedlist li .info-tag {
+    /*margin-right: -.24rem;*/
+    font-size: 1.2rem;
+    display: flex !important;
+    display: -webkit-box !important;
+    display: -webkit-box !important;
+}
+}
+.feedlist li .info-tag div {
+    line-height: 1.68rem;
+    display: flex !important;
+    display: -webkit-box !important;
+    display: -webkit-box !important;
+}
+.feedlist li .info-tag div.tag a {
+    color: #349edf;
+}
+
+.feedlist li .info-tag div a {
+    display: block;
+}
+.feedlist li .info-tag div.user-name a {
+    max-width: 6.6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.feedlistli .info-tag div {
+    -webkit-box-align: center;
+    align-items: center;
+}
+.feedlist li .info-tag div.unlike-box {
+    margin-left: auto;
+}
+.feedlist li .info-tag div.unlike-box a.btn-unlike {
+    position: relative;
+    display: block;
+    width: .68rem;
+    height: .68rem;
+    line-height: .68rem;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+}
+.feedlist li .info-tag div.after-dotted::after {
+    margin-right: 5.5rem;
+    content: "";
+    display: block;
+}
+ .feedlist li .info-tag div.date {
+    color: #999;
+}
+.btn-unlike img{
+	position: absolute;
+	width: 0.1rem;
+    height: 0.1rem;
+    fill: #ccc;
+}
+.lunbo {
+	/*background-color: red;*/
+	width: 100%;
+	height: 15rem;
+	overflow: hidden;
+}
+.lunbo img {
+	width: 100%;
+	height: 15rem;
+}

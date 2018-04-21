@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          <link rel="stylesheet" href="css/boke.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script src="./js/vue.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+	<title>CSDN首页</title>
+</head>
+<body>
+	 <div id="boke">
+	 	 <div class="title">
+	 	    <div class="path"><img src="./image/path.png"></div>
+	 	 	<div class="csdn"><img src="./image/csdn.png"></div>
+	 	 	<div class="enter">
+	 	 		<img class="fang" src="./image/fang.png">
+	 	 		<a :href="'./denglu.html'" class="go">登录</a>
+	 	 	</div>
+	 	 </div>
+	 	 <nav class="d-flex">
+	 	 	<div class="nav-mask">
+	 	 		<div class="warp">	 		
+		 	 		<a href="" class="btn-nav" v-for="itemIn in classify_lists">{{itemIn.classify_name}}</a>
+	 	 	    </div>	 
+	 	 	</div>
+	 	 </nav>
+	 	 <div class="lunbo">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide" v-for="itemOn in banner">
+			            <img :src="itemOn.image" alt="">
+			        </div>
+			    </div>
+		  	</div>
+		</div>
+	 	 <main data-category="home">
+
+	 	    <ul class="feedlist" v-for="item in blog_lists">
+	 	    	<li>
+	 	    		<h2 class="csdn-track">
+	 	    			<a :href="'./xiangqing.html?id='+item.id">{{item.title}}</a>
+	 	    		</h2>
+	 	    		<div class="info-tag" >
+	 	    			<div class="tag after-dotted">
+	 	    				<a class="btn-nav" href="">{{item.category_name}}</a>
+	 	    			</div>
+	 	    			<div class="user-name after-dotted">
+	 	    				<a>{{item.username}}</a>
+	 	    			</div>
+	 	    			<div class="read-count after-dotted">716阅读</div>
+	 	    			<div class="date">{{item.format_ctime}}</div>
+	 	    			<div class="unlike-box">
+	 	    				<a class="btn-unlike" href="">
+	 	    					<img src="./image/cha.png">
+	 	    				</a>
+	 	    			</div>
+	 	    		</div>
+	 	    	</li>
+	 	    </ul>
+
+	 </div>
+ 
+	<script type="text/javascript" src="js/boke.js"></script>
+	<script src="js/swiper-3.4.2.min.js"></script>
+</body>
+</html>

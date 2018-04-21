@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          <link rel="stylesheet" href="css/bokexiangqing.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script src="./js/vue.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+	<title>博客详情页</title>
+</head>
+<body>
+   <div id="boke_one">
+   	 <div class="csdn-toolbar clearfix">
+	 	<div class="mToolbarL floatL">
+             <div class="toolbarBack"><a href=""><img src="./image/hui.png"></a></div>
+             <div class="logo floatR"><a href=""><img src="./image/csdn.png"></a></div>
+	 	</div>
+	 	<div class="rightmenu floatR clearfix unlogin">
+	 	 		<a href="" class="floatL search_btn"><img src="./image/fang.png"></a>
+	 	 		<div class="login floatR">
+	 	 			<a href="./denglu.html">登录</a>
+	 	 		</div>
+	 	</div>
+	</div>
+	<div id="main">
+         <div class="top_user_mod Clearfix">
+         	<div class="top_user_info floatL Clearfix">
+         		<a href="#" class="floatL clearfix"><img src="./image/xueba.png" class="floatL avatar">
+         		<span class="nick_name odd-overhidden floatL">{{blog_info.author_name}}</span></a>
+         	</div>
+         	<div class="floatR csdn-tracking-statistics tracking-click">
+         		<a href="###">关注</a>
+         	</div>
+         </div>
+         <div id="article" class=".margin_sides">
+	         	<h1 class="article_title">{{blog_info.title}}</h1>
+	         <div class="article_info clearfix">
+	         	<span class="type">原创</span>
+	            <span class="create_time">{{blog_info.date}}</span>
+	            <span class="read_num">阅读{{blog_info.read_num}}</span>
+	         </div>
+	         <div class="article_content" style="height: 1049px; overflow: hidden;">
+	         	<div class="markdown_views">
+	         		<p style="margin-bottom:0px;clear:both;color:rgb(0,0,0);font-family:'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;font-size:14px;line-height:25.6px;">
+	         			<span style="margin:0px;padding:0px;font-family:'宋体';">{{blog_info.content}}</span>
+	         		</p>
+	         	</div>
+	         </div>
+         </div>
+         <div id="operate"class="clearfix" style="display:block;">
+         	<div class="like-btn  operate_c floatL csdn-tracking-statistics tracking-click" data-pid="blog_app" data-mod="popu_373">
+         		<a href="###" target="_blank">
+         			<svg class="icon dianzan" fill="red" aria-hidden="true">
+         				<use xlink:href="#icon-dianzan">
+         					#shadow-root (closed)
+         				</use>
+         			</svg>
+                  <span>点赞</span>
+                  <span class="num"></span>
+         		</a>
+         	</div>
+         	<div class="comment-btn operate_c floatL csdn-tracking-statistics tracking-click" data-pid="blog_app" data-mod="popu_544">
+         		<a href="###" target="_blank">
+         			<svg class="icon pinglun" fill="red" aria-hidden="true">
+         				<use xlink:href="#icon-dpinglun">
+         					#shadow-root (closed)
+         				</use>
+         			</svg>
+                   <span>评论</span>
+                  <span>3</span>
+         		</a>
+         	</div>
+         		<div class="like-btn  operate_c floatL csdn-tracking-statistics tracking-click" data-pid="blog_app" data-mod="popu_374">
+         		<a href="###" target="_blank">
+         			<svg class="icon shoucang" fill="red" aria-hidden="true">
+         				<use xlink:href="#icon-shoucang">
+         					#shadow-root (closed)
+         				</use>
+         			</svg>
+                  <span @click="collect">收藏</span>
+         		</a>
+         	</div>
+         </div>
+   </div>
+   </div>
+   <script src="js/swiper-3.4.2.min.js"></script>
+	<script src="./js/bokexiangqing.js"></script>
+</body>
+</html>

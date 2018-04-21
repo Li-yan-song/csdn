@@ -1,0 +1,223 @@
+html{
+	font-size: 50px;
+}
+body {
+    line-height: 150%;
+    font-size: 16px;
+}
+body {
+    background-color: #fff;
+    padding-bottom: .96rem;
+}
+html, body, ul, p {
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+    outline: 0;
+}
+.clearfix:after {
+    content: '.';
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+.csdn-toolbar {
+    font-size: 12px;
+    font-family: 'PingFang SC','Microsoft YaHei',SimHei,Arial,SimSun;
+    color: #333;
+    line-height: 18px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+    padding: 14px 16px;
+    height: 52px;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.csdn-toolbar .mToolbarL {
+    /*overflow: hidden;*/
+    width: 67%;
+    height: 24px;
+    position: relative;
+}
+.csdn-toolbar .floatL {
+    float: left;
+}
+.csdn-toolbar .toolbarBack {
+    width: 50px;
+    float: left;
+}
+.csdn-toolbar a {
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+}
+.csdn-toolbar .rightmenu {
+    margin-left: auto;
+}
+
+.csdn-toolbar .floatR {
+    float: right;
+}
+.csdn-toolbar .clearfix {
+    overflow: visible;
+}
+.csdn-toolbar .rightmenu .search_btn {
+    margin-right: 12px;
+}
+.csdn-toolbar .unlogin .login {
+    display: block;
+    margin-top: 2px;
+}
+.csdn-toolbar .login a {
+    font-size: 14px;
+    color: #C92027;
+}
+.csdn-toolbar a {
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+}
+body #main .top_user_mod {
+    padding: .32rem 0;
+    margin: 0 0.32rem;
+    border-bottom: 1px solid #ddd;
+    height: 0.5rem;
+}
+body #main .top_user_mod .top_user_info a .avatar {
+    display: inline-block;
+    width: .64rem;
+    height: .64rem;
+    background-color: #abafab;
+    border-radius: 50%;
+}
+body #main .top_user_mod .top_user_info a .nick_name {
+    margin-left: .16rem;
+    line-height: .64rem;
+    width: 2.78rem;
+    font-weight: 700;
+}
+.odd-overhidden {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.floatL {
+    float: left;
+}
+#main{
+	margin-top:50px; 
+}
+a, a:link, a:visited {
+    color: #4f4f4f;
+}
+.tracking-click a {
+    display: block;
+}
+.tracking-click a{
+    width: 3.2rem;
+    height: .64rem;
+    color: #fff;
+    border-radius: 4px;
+    line-height: .64rem;
+    text-align: center;
+    float: right;
+}
+.margin_sides {
+    margin-left: .32rem;
+    margin-right: .32rem;
+}
+#article .article_title {
+    font-size: .4rem;
+    color: #333;
+    letter-spacing: 0;
+    line-height: .6rem;
+    padding-top: .32rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-weight: 700;
+    padding-left: 0.33rem;
+}
+#article .article_info {
+    font-size: .24rem;
+    color: #999;
+    letter-spacing: 0;
+    line-height: .64rem;
+    margin-top: .08rem;
+    padding-bottom: .16rem;
+    margin-bottom: .32rem;
+    border-bottom: 1px solid #ddd;
+    padding-left: 0.33rem;
+}
+#article .article_info span {
+    margin-right: .24rem;
+}
+#article .article_content {
+    word-wrap: break-word;
+    word-break: normal;
+}
+.markdown_views {
+    font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif,SimHei,SimSun;
+}
+.markdown_views P {
+    font-size: .32rem;
+    color: #4f4f4f;
+    font-weight: 400;
+    line-height: .52rem;
+    margin: 0 0 .32rem;
+    text-align: justify;
+}
+element.style {
+    margin-bottom: 0px;
+    clear: both;
+    color: rgb(0,0,0);
+    font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 25.6px;
+}
+#main #operate {
+    width: 100%;
+    height: .96rem;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: #f2f2f2;
+}
+#main #operate, #prompt {
+    position: fixed;
+    display: none;
+}
+#main #operate .operate_c {
+    height: 100%;
+    width: 33.3333%;
+    text-align: center;
+    line-height: .96rem;
+}
+a, a:link, a:visited {
+    color: #4f4f4f;
+}
+#main #operate .operate_c svg {
+    fill: #79a5e5;
+}
+#main #operate .operate_c span {
+    font-size: .28rem;
+    color: #4f4f4f;
+    letter-spacing: 0;
+    line-height: .64rem;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
